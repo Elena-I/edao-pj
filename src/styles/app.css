@@ -134,6 +134,7 @@
   width: 45px;
 }
 .container .place {
+  display: flex;
   margin: 9px 0 21px 0;
   font-family: Roboto;
   font-style: normal;
@@ -141,6 +142,49 @@
   font-size: 14px;
   line-height: 16px;
   width: 540px;
+}
+.container .place__adress {
+  flex-direction: row;
+  width: 270px;
+}
+.container .place__time {
+  flex-direction: row;
+}
+@media (max-width: 1400px) {
+  .container .place {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1024px) {
+  .container .place {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .container .place {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 600px) {
+  .container .place {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 520px) {
+  .container .place {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  .container .place {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .place__pointer {
   height: 12px;
@@ -160,6 +204,36 @@
   align-items: flex-start;
   border-bottom: 1px solid #F1F1F1;
   padding-bottom: 26px;
+}
+@media (max-width: 1400px) {
+  .container .position-description {
+    width: 540px;
+  }
+}
+@media (max-width: 1024px) {
+  .container .position-description {
+    width: 540px;
+  }
+}
+@media (max-width: 768px) {
+  .container .position-description {
+    width: 540px;
+  }
+}
+@media (max-width: 600px) {
+  .container .position-description {
+    width: 510px;
+  }
+}
+@media (max-width: 520px) {
+  .container .position-description {
+    width: 345px;
+  }
+}
+@media (max-width: 375px) {
+  .container .position-description {
+    width: 345px;
+  }
 }
 .container .position-description__photo {
   background: no-repeat left center url("../image/pizza.png");
