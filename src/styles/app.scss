@@ -3,3 +3,225 @@
 @import 'reset';
 @import 'fonts';
 @import 'typography';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 auto;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #F1F1F1;
+    margin: 19px 52px 0 52px;
+
+
+    &__logo {
+      background: no-repeat center center url("../image/logo-edao.png");
+      width: 104px;
+      height: 28px;
+      margin-bottom: 19px;
+    }
+  }
+
+  .contant-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 188px;
+    width: 100%;
+  }
+
+  .contant {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+
+    &__name-place {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 33px;
+      display: flex;
+      width: 540px;
+    }
+
+    &__geolocation {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__adress-map {
+      display: flex;
+      width: 45px;
+      height: 45px;
+      background: no-repeat center center url("../icons/geolocation.png") #F6F6F6;
+      border-radius: 5px;
+      align-self: center;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 45px;
+    }
+  }
+
+  .place {
+    display: flex;
+    flex-direction: row;
+    margin: 9px 0 21px 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    width: 540px;
+
+    &__pointer {
+      height: 12px;
+      width: 12px;
+
+      &_pointer-adress {
+        background: no-repeat left center url("../icons/pointer.png");
+        margin: 4px;
+      }
+
+      &_pointer-time {
+        background: no-repeat left center url("../icons/clock.png");
+        margin: 3px 3px 0 15px;
+      }
+    }
+  }
+
+  .position-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid #F1F1F1;;
+    padding-bottom: 26px;
+
+    &__photo {
+      background: no-repeat left center url("../image/pizza.png");
+      width: 160px;
+      height: 160px;
+      border-radius: 5px;
+    }
+
+    &__discount {
+      display: flex;
+      justify-content: center;
+      width: 51px;
+      height: 23px;
+      background: #2F80ED;
+      border-radius: 5px 0px;
+    }
+
+    &__discount p {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+      letter-spacing: -0.025em;
+    }
+  }
+
+  .position-consist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+
+    &__name {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 115.77%;
+      margin-bottom: 6px;
+    }
+
+    &__ingredients {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 15px;
+      color: #858585;
+      margin-bottom: 16px;
+    }
+  }
+
+  .price {
+    font-family: Open Sans;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+
+    &__old {
+      font-weight: normal;
+      text-decoration: line-through;
+      margin-right: 5px;
+
+    }
+
+    &__new {
+      font-weight: bold;
+    }
+
+    &__rub:after {
+      content:"\20BD";
+    }
+  }
+
+  .food-info {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 8px 0;
+
+    &__buy-food {
+      margin-bottom: 24px;
+    }
+  }
+  .application-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+
+    &__button-apple {
+      background: no-repeat left center url("../button/app-store.png");
+      width: 165px;
+      height: 47px;
+      margin-right: 16px;
+    }
+    &__button-google {
+      background: no-repeat left center url("../button/google-play.png");
+      width: 165px;
+      height: 47px;
+    }
+  }
+}
