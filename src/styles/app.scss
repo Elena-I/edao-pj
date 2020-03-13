@@ -29,7 +29,6 @@
     border-bottom: 1px solid #F1F1F1;
     margin: 19px 52px 0 52px;
 
-
     &__logo {
       background: no-repeat center center url("../image/logo-edao.png");
       width: 104px;
@@ -44,12 +43,41 @@
     justify-content: center;
     margin-top: 188px;
     width: 100%;
+    @media (max-width: 1400px) {
+      margin-bottom: 272px;
+    }
+    @media (max-width: 1024px) {
+      margin-bottom: 711px;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 396px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 565px;
+    }
+    @media (max-width: 375px) {
+      margin-bottom: 395px;
+    }
   }
 
   .contant {
     display: flex;
     flex-direction: column;
-    width: 540px;
+    @media (max-width: 1400px) {
+      max-width: 540px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 540px;
+    }
+    @media (max-width: 768px) {
+      max-width: 540px;
+    }
+    @media (max-width: 600px) {
+      max-width: 510px;
+    }
+    @media (max-width: 375px) {
+      max-width: 345px;
+    }
 
     &__name-place {
       font-family: Open Sans;
@@ -58,7 +86,6 @@
       font-size: 24px;
       line-height: 33px;
       display: flex;
-      width: 540px;
     }
 
     &__geolocation {
@@ -83,8 +110,6 @@
   }
 
   .place {
-    display: flex;
-    flex-direction: row;
     margin: 9px 0 21px 0;
     font-family: Roboto;
     font-style: normal;
@@ -92,6 +117,29 @@
     font-size: 14px;
     line-height: 16px;
     width: 540px;
+
+    //@media (max-width: 1400px) {
+    //  display: flex;
+    //  flex-direction: row;
+    //}
+    //@media (max-width: 1024px) {
+    //  display: flex;
+    //  flex-direction: row;
+    //}
+    //@media (max-width: 768px) {
+    //  display: flex;
+    //  flex-direction: row;
+    //}
+    //@media (max-width: 600px) {
+    //  display: flex;
+    //  flex-direction: column;
+    //  width: 254px;
+    //}
+    //@media (max-width: 375px) {
+    //  display: flex;
+    //  flex-direction: column;
+    //  width: 254px;
+    //}
 
     &__pointer {
       height: 12px;
@@ -156,6 +204,21 @@
       font-size: 15px;
       line-height: 115.77%;
       margin-bottom: 6px;
+      @media (max-width: 1400px) {
+        max-width: 264px;
+      }
+      @media (max-width: 1024px) {
+        max-width: 264px;
+      }
+      @media (max-width: 768px) {
+        max-width: 264px;
+      }
+      @media (max-width: 600px) {
+        max-width: 215px;
+      }
+      @media (max-width: 375px) {
+        max-width: 215px;
+      }
     }
 
     &__ingredients {
@@ -166,6 +229,64 @@
       line-height: 15px;
       color: #858585;
       margin-bottom: 16px;
+
+      @media (max-width: 1400px) {
+        p {
+          display: none;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        ul li:before {
+          content: "- ";
+        }
+      }
+      @media (max-width: 1024px) {
+        p {
+          display: none;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        ul li:before {
+          content: "- ";
+        }
+      }
+      @media (max-width: 768px) {
+        p {
+          display: none;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        ul li:before {
+          content: "- ";
+        }
+      }
+      @media (max-width: 600px) {
+        p {
+          display: block;
+        }
+
+        ul {
+          display: none;
+        }
+      }
+      @media (max-width: 375px) {
+        p {
+          display: block;
+        }
+
+        ul {
+          display: none;
+        }
+      }
     }
   }
 
@@ -210,7 +331,6 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
 
     &__button-apple {
       background: no-repeat left center url("../button/app-store.png");
