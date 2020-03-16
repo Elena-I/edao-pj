@@ -75,6 +75,9 @@
     @media (max-width: 600px) {
       max-width: 510px;
     }
+    @media (max-width: 400px) {
+      max-width: 345px;
+    }
     @media (max-width: 375px) {
       max-width: 345px;
     }
@@ -119,15 +122,6 @@
     line-height: 16px;
     width: 540px;
 
-    &__adress {
-      flex-direction: row;
-      width: 270px;
-    }
-
-    &__time {
-      flex-direction: row;
-    }
-
     @media (max-width: 1400px) {
       display: flex;
       flex-direction: row;
@@ -153,6 +147,35 @@
       flex-direction: column;
     }
 
+    &__adress {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__time {
+      display: flex;
+      flex-direction: row;
+
+      @media (max-width: 1400px) {
+        margin-top: 0;
+      }
+      @media (max-width: 1024px) {
+        margin-top: 0;
+      }
+      @media (max-width: 768px) {
+        margin-top: 0;
+      }
+      @media (max-width: 600px) {
+        margin-top: 0;
+      }
+      @media (max-width: 520px) {
+        margin-top: 5px;
+      }
+      @media (max-width: 375px) {
+        margin-top: 5px;
+      }
+    }
+
     &__pointer {
       height: 12px;
       width: 12px;
@@ -165,6 +188,25 @@
       &_pointer-time {
         background: no-repeat left center url("../icons/clock.png");
         margin: 3px 3px 0 15px;
+
+        @media (max-width: 1400px) {
+          margin: 3px 3px 0 15px;
+        }
+        @media (max-width: 1024px) {
+          margin: 3px 3px 0 15px;
+        }
+        @media (max-width: 768px) {
+          margin: 3px 3px 0 15px;
+        }
+        @media (max-width: 600px) {
+          margin: 3px 3px 0 15px;
+        }
+        @media (max-width: 520px) {
+          margin: 3px 3px 0 4px;
+        }
+        @media (max-width: 375px) {
+          margin: 3px 3px 0 4px;
+        }
       }
     }
   }
@@ -200,6 +242,30 @@
       width: 160px;
       height: 160px;
       border-radius: 5px;
+      box-sizing: border-box;
+
+      @media (max-width: 1400px) {
+        width: 160px;
+        height: 160px;
+      }
+      @media (max-width: 1024px) {
+        width: 160px;
+        height: 160px;
+      }
+      @media (max-width: 768px) {
+        width: 160px;
+        height: 160px;
+      }
+      @media (max-width: 600px) {
+        width: 160px;
+        height: 160px;
+      }
+      @media (max-width: 520px) {
+        height: 100px;
+      }
+      @media (max-width: 375px) {
+        height: 100px;
+      }
     }
 
     &__discount {
