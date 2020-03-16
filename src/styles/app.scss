@@ -19,15 +19,37 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1110px;
   margin: 0 auto;
+  max-width: 1110px;
+
+  @media (max-width: 1400px) {
+    max-width: 1110px;
+  }
+  @media (max-width: 1024px) {
+    max-width: 920px;
+  }
+  @media (max-width: 768px) {
+    max-width: 690px;
+  }
+  @media (max-width: 600px) {
+    max-width: 345px;
+  }
+  @media (max-width: 375px) {
+    max-width: 345px;
+  }
+  @media (max-width: 350px) {
+    max-width: 300px;
+  }
 
   .header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    border-bottom: 1px solid #F1F1F1;
-    margin: 19px 52px 0 52px;
+    padding: 20px;
+    max-width: 1110px;
+
+    &__header-characteristic {
+      border-bottom: 1px solid #F1F1F1;
+    }
 
     &__logo {
       background: no-repeat center center url("../image/logo-edao.png");
@@ -35,34 +57,58 @@
       height: 28px;
       margin-bottom: 19px;
     }
+
+    @media (max-width: 1400px) {
+      max-width: 1110px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 920px;
+    }
+    @media (max-width: 768px) {
+      max-width: 690px;
+    }
+    @media (max-width: 600px) {
+      max-width: 345px;
+    }
+    @media (max-width: 375px) {
+      max-width: 345px;
+    }
+    @media (max-width: 350px) {
+      max-width: 300px;
+    }
   }
 
-  .contant-wrapper {
+  .content-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 188px;
     width: 100%;
+
     @media (max-width: 1400px) {
-      margin-bottom: 272px;
+      margin-top: 188px;
     }
     @media (max-width: 1024px) {
-      margin-bottom: 711px;
+      margin-top: 188px;
     }
     @media (max-width: 768px) {
-      margin-bottom: 396px;
+      margin-top: 188px;
     }
     @media (max-width: 600px) {
-      margin-bottom: 565px;
+      margin-top: 11px;
     }
     @media (max-width: 375px) {
-      margin-bottom: 395px;
+      margin-top: 11px;
+    }
+    @media (max-width: 350px) {
+      margin-top: 10px;
     }
   }
 
-  .contant {
+  .content {
     display: flex;
     flex-direction: column;
+    max-width: 540px;
+
     @media (max-width: 1400px) {
       max-width: 540px;
     }
@@ -73,36 +119,99 @@
       max-width: 540px;
     }
     @media (max-width: 600px) {
-      max-width: 510px;
-    }
-    @media (max-width: 400px) {
       max-width: 345px;
     }
     @media (max-width: 375px) {
       max-width: 345px;
+    }
+    @media (max-width: 350px) {
+      max-width: 300px;
     }
 
     &__name-place {
       font-family: Open Sans;
-      font-style: normal;
-      font-weight: bold;
       font-size: 24px;
       line-height: 33px;
+      font-style: normal;
+      font-weight: bold;
       display: flex;
+
+      @media (max-width: 1400px) {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      @media (max-width: 600px) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+      @media (max-width: 375px) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+      @media (max-width: 350px) {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
 
     &__geolocation {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: 1400px) {
+        width: 540px;
+      }
+      @media (max-width: 1024px) {
+        width: 540px;
+      }
+      @media (max-width: 768px) {
+        width: 510px;
+      }
+      @media (max-width: 600px) {
+        width: 345px;
+      }
+      @media (max-width: 375px) {
+        width: 345px;
+      }
+      @media (max-width: 350px) {
+        width: 300px;
+      }
     }
 
     &__adress-map {
       display: flex;
-      width: 45px;
-      height: 45px;
       background: no-repeat center center url("../icons/geolocation.png") #F6F6F6;
       border-radius: 5px;
+      width: 45px;
+      height: 45px;
       align-self: center;
+
+      @media (max-width: 1400px) {
+        align-self: center;
+      }
+      @media (max-width: 1024px) {
+        align-self: center;
+      }
+      @media (max-width: 768px) {
+        align-self: center;
+      }
+      @media (max-width: 600px) {
+        align-self: flex-start;
+      }
+      @media (max-width: 375px) {
+        align-self: flex-start;
+      }
+      @media (max-width: 350px) {
+        align-self: flex-start;
+      }
     }
 
     &__wrapper {
@@ -136,15 +245,17 @@
     }
     @media (max-width: 600px) {
       display: flex;
-      flex-direction: row;
-    }
-    @media (max-width: 520px) {
-      display: flex;
       flex-direction: column;
     }
     @media (max-width: 375px) {
       display: flex;
       flex-direction: column;
+    }
+    @media (max-width: 350px) {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      line-height: 16px;
     }
 
     &__adress {
@@ -166,13 +277,15 @@
         margin-top: 0;
       }
       @media (max-width: 600px) {
-        margin-top: 0;
-      }
-      @media (max-width: 520px) {
         margin-top: 5px;
       }
       @media (max-width: 375px) {
         margin-top: 5px;
+      }
+      @media (max-width: 350px) {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 16px;
       }
     }
 
@@ -182,30 +295,30 @@
 
       &_pointer-adress {
         background: no-repeat left center url("../icons/pointer.png");
-        margin: 4px;
+        margin: 3px;
       }
 
       &_pointer-time {
         background: no-repeat left center url("../icons/clock.png");
-        margin: 3px 3px 0 15px;
+        margin: 1px 3px 0 15px;
 
         @media (max-width: 1400px) {
-          margin: 3px 3px 0 15px;
+          margin: 1px 3px 0 15px;
         }
         @media (max-width: 1024px) {
-          margin: 3px 3px 0 15px;
+          margin: 1px 3px 0 15px;
         }
         @media (max-width: 768px) {
-          margin: 3px 3px 0 15px;
+          margin: 1px 3px 0 15px;
         }
         @media (max-width: 600px) {
-          margin: 3px 3px 0 15px;
-        }
-        @media (max-width: 520px) {
-          margin: 3px 3px 0 4px;
+          margin: 1px 3px 0 4px;
         }
         @media (max-width: 375px) {
-          margin: 3px 3px 0 4px;
+          margin: 1px 3px 0 4px;
+        }
+        @media (max-width: 350px) {
+          margin: 1px 3px 0 4px;
         }
       }
     }
@@ -215,56 +328,70 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    border-bottom: 1px solid #F1F1F1;;
-    padding-bottom: 26px;
+    border-bottom: 1px solid #F1F1F1;
+    width: 540px;
 
     @media (max-width: 1400px) {
       width: 540px;
+      padding-bottom: 25px;
     }
     @media (max-width: 1024px) {
       width: 540px;
+      padding-bottom: 25px;
     }
     @media (max-width: 768px) {
-      width: 540px;
+      width: 510px;
+      padding-bottom: 25px;
     }
     @media (max-width: 600px) {
-      width: 510px;
-    }
-    @media (max-width: 520px) {
       width: 345px;
+      padding-bottom: 16px;
     }
     @media (max-width: 375px) {
       width: 345px;
+      padding-bottom: 16px;
+    }
+    @media (max-width: 350px) {
+      width: 300px;
+      padding-bottom: 10px;
     }
 
     &__photo {
       background: no-repeat left center url("../image/pizza.png");
-      width: 160px;
-      height: 160px;
       border-radius: 5px;
-      box-sizing: border-box;
+      box-sizing: content-box;
+      min-height: 160px;
+      min-width: 160px;
 
       @media (max-width: 1400px) {
-        width: 160px;
-        height: 160px;
+        background-size: contain;
+        min-height: 160px;
+        min-width: 160px;
       }
       @media (max-width: 1024px) {
-        width: 160px;
-        height: 160px;
+        background-size: contain;
+        min-height: 160px;
+        min-width: 160px;
       }
       @media (max-width: 768px) {
-        width: 160px;
-        height: 160px;
+        background-size: contain;
+        min-height: 160px;
+        min-width: 160px;
       }
       @media (max-width: 600px) {
-        width: 160px;
-        height: 160px;
-      }
-      @media (max-width: 520px) {
-        height: 100px;
+        background-size: contain;
+        min-height: 100px;
+        min-width: 100px;
       }
       @media (max-width: 375px) {
-        height: 100px;
+        background-size: contain;
+        min-height: 100px;
+        min-width: 100px;
+      }
+      @media (max-width: 350px) {
+        background-size: contain;
+        min-height: 100px;
+        min-width: 100px;
       }
     }
 
@@ -294,6 +421,25 @@
     align-items: flex-start;
     margin-left: 30px;
 
+    @media (max-width: 1400px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 1024px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 600px) {
+      margin-left: 15px;
+    }
+    @media (max-width: 375px) {
+      margin-left: 15px;
+    }
+    @media (max-width: 350px) {
+      margin-left: 10px;
+    }
+
     &__name {
       font-family: Open Sans;
       font-style: normal;
@@ -301,6 +447,8 @@
       font-size: 15px;
       line-height: 115.77%;
       margin-bottom: 6px;
+      max-width: 264px;
+
       @media (max-width: 1400px) {
         max-width: 264px;
       }
@@ -315,6 +463,10 @@
       }
       @media (max-width: 375px) {
         max-width: 215px;
+      }
+      @media (max-width: 350px) {
+        max-width: 215px;
+        font-size: 12px;
       }
     }
 
@@ -355,18 +507,24 @@
       }
       @media (max-width: 768px) {
         p {
-          display: none;
+          display: block;
         }
 
         ul {
-          list-style: none;
-        }
-
-        ul li:before {
-          content: "- ";
+          display: none;
         }
       }
       @media (max-width: 600px) {
+        p {
+          display: block;
+          font-size: 11px;
+        }
+
+        ul {
+          display: none;
+        }
+      }
+      @media (max-width: 375px) {
         p {
           display: block;
         }
@@ -375,7 +533,7 @@
           display: none;
         }
       }
-      @media (max-width: 375px) {
+      @media (max-width: 350px) {
         p {
           display: block;
         }
@@ -422,6 +580,25 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 8px 0;
+
+    @media (max-width: 1400px) {
+      wfont-size: 16px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+    @media (max-width: 375px) {
+      font-size: 16px;
+    }
+    @media (max-width: 350px) {
+      font-size: 12px;
+    }
 
     &__buy-food {
       margin-bottom: 24px;
