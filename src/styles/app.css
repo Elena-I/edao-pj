@@ -466,9 +466,13 @@
   font-weight: normal;
   text-decoration: line-through;
   margin-right: 5px;
+  font-size: 15px;
+  line-height: 20px;
 }
 .container .price__new {
   font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
 }
 .container .price__rub:after {
   content: "₽";

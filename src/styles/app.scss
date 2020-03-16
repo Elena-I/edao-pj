@@ -397,11 +397,14 @@
       font-weight: normal;
       text-decoration: line-through;
       margin-right: 5px;
-
+      font-size: 15px;
+      line-height: 20px;
     }
 
     &__new {
       font-weight: bold;
+      font-size: 15px;
+      line-height: 20px;
     }
 
     &__rub:after {
