@@ -73,31 +73,37 @@
 @media (max-width: 1400px) {
   .container .header {
     padding: 20px;
+    max-width: 1110px;
   }
 }
 @media (max-width: 1024px) {
   .container .header {
     padding: 20px;
+    max-width: 920px;
   }
 }
 @media (max-width: 768px) {
   .container .header {
     padding: 20px;
+    max-width: 690px;
   }
 }
 @media (max-width: 600px) {
   .container .header {
     padding: 20px 0 20px 0;
+    max-width: 345px;
   }
 }
 @media (max-width: 375px) {
   .container .header {
     padding: 20px 0 20px 0;
+    max-width: 345px;
   }
 }
 @media (max-width: 350px) {
   .container .header {
     padding: 20px 0 20px 0;
+    max-width: 300px;
   }
 }
 .container .header__header-characteristic {
@@ -108,36 +114,6 @@
   width: 104px;
   height: 28px;
   margin-bottom: 19px;
-}
-@media (max-width: 1400px) {
-  .container .header {
-    max-width: 1110px;
-  }
-}
-@media (max-width: 1024px) {
-  .container .header {
-    max-width: 920px;
-  }
-}
-@media (max-width: 768px) {
-  .container .header {
-    max-width: 690px;
-  }
-}
-@media (max-width: 600px) {
-  .container .header {
-    max-width: 345px;
-  }
-}
-@media (max-width: 375px) {
-  .container .header {
-    max-width: 345px;
-  }
-}
-@media (max-width: 350px) {
-  .container .header {
-    max-width: 300px;
-  }
 }
 .container .content-wrapper {
   display: flex;
@@ -390,6 +366,7 @@
 .container .place__time {
   display: flex;
   flex-direction: row;
+  margin-top: 0;
 }
 @media (max-width: 1400px) {
   .container .place__time {
@@ -471,6 +448,7 @@
   align-items: flex-start;
   border-bottom: 1px solid #F1F1F1;
   width: 540px;
+  padding-bottom: 25px;
 }
 @media (max-width: 1400px) {
   .container .position-description {
@@ -659,6 +637,15 @@
   color: #858585;
   margin-bottom: 16px;
 }
+.container .position-consist__ingredients p {
+  display: none;
+}
+.container .position-consist__ingredients ul {
+  list-style: none;
+}
+.container .position-consist__ingredients ul li:before {
+  content: "- ";
+}
 @media (max-width: 1400px) {
   .container .position-consist__ingredients p {
     display: none;
@@ -748,7 +735,7 @@
 }
 @media (max-width: 1400px) {
   .container .food-info {
-    wfont-size: 16px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1024px) {
@@ -786,9 +773,10 @@
 }
 .container .application-button__button-apple {
   background: no-repeat left center url("../button/app-store.png");
-  max-width: 165px;
+  min-width: 165px;
   height: 47px;
   margin-right: 16px;
+  background-size: contain;
 }
 @media (max-width: 1400px) {
   .container .application-button__button-apple {
@@ -828,8 +816,9 @@
 }
 .container .application-button__button-google {
   background: no-repeat left center url("../button/google-play.png");
-  max-width: 165px;
+  min-width: 165px;
   height: 47px;
+  background-size: contain;
 }
 @media (max-width: 1400px) {
   .container .application-button__button-google {
